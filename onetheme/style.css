@@ -1,0 +1,243 @@
+body{
+	background: #fff;
+	font-family: Poppins;
+    font-size: 13px;
+    font-weight: 300 !important;
+    color: #767676;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+/*header*/
+.logo-header{
+	float: left;
+}
+.header-nav .nav{
+	float: right;
+}
+.extra-nav {
+    float: right;
+    padding: 25px 0;
+    margin-right: 15px;
+}
+/*
+ALL SECTIONS
+*/
+.after-titile-line {
+    background-image: url(https://aonetheme.com/extend/wp-content/uploads/2019/08/logo_icon.png);
+    width: 26px;
+    height: 26px;
+    margin: 0 auto 10px;
+    display: block;
+    position: relative;
+}
+.title-line-left, .title-line-right {
+    width: 50px;
+    height: 2px;
+    background: #a7a7a7;
+    position: absolute;
+    top: 10px;
+}
+.title-line-left {
+    left: -55px;
+}
+.title-line-right {
+    right: -55px;
+}
+.section-full {
+    padding: 70px 0;
+    padding: 80px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-icon i {
+    font-size: 45px;
+}
+.overlay-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #555555;
+    text-transform: none;
+    margin-bottom: 24px!important;
+}
+.section-full > .container {
+    z-index: 1;
+    position: relative;
+}
+.section-content {
+    margin-top: 50px;
+}
+/**/
+/*
+SECTION OVERLAY
+*/
+.section-full.overlay{
+    background: url(https://aonetheme.com/extend/wp-content/uploads/2017/12/bg7.jpg) center fixed no-repeat;
+}
+.section-full.overlay .section-title{
+	font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+.section-full.overlay .section-title span{
+	color: #3396d1;
+}
+/*
+SECTION WRAPPER
+*/
+.slider-wrapper{
+	margin: 0px auto;
+    background: transparent;
+    padding: 0px;
+    height: 666px;
+    overflow: visible;
+}
+/*
+SECTION SLIDER
+*/
+.slider-background{
+	background-repeat: no-repeat;
+    background-image: url(https://aonetheme.com/extend/wp-content/uploads/2018/07/image-1-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+}
+/*
+SECTION DEALS
+*/
+.inner-col .work-step {
+    position: absolute;
+    top: -20px;
+    font-size: 80px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+.section-img-icon img{
+	height: 80px;
+}
+/*
+SECTION INFO
+*/
+.section-full.info{
+	color: #fff;
+	background-color: #3396d1;
+}
+.company-count{
+	font-size: 36px;
+    font-weight: 700;
+    font-family: Arial;
+    line-height: 40px;
+    padding: 5px 0;
+}
+.company-status-name{
+	font-size: 16px;
+    text-transform: uppercase;
+}
+/*
+SECTION OVERLAY CHOOSE
+*/
+.section-full.overlay-choose{
+	background-image: url(https://aonetheme.com/extend/wp-content/uploads/2017/12/bg8.jpg);
+    background-attachment: fixed;
+}
+.overlay-icon{
+	text-align: center;
+}
+.section-img-icon img{
+	height:80px;
+	max-width: 100%;
+	width: auto;
+	vertical-align: middle;
+}
+.section-full.overlay-choose h2,
+.section-full.overlay,
+ .section-full.overlay-choose{
+	color: #fff;
+}
+/*
+SECTION TESTIMONIALS
+*/
+.section-full.testimonials{
+	background-color: #eff3f6;	
+}
+.section-full.testimonials p{
+	color: rgb(118, 118, 118);
+}
+.testimonial-img{
+	display: inline-block;
+	background: #fff none repeat scroll 0 0;
+    border: 5px solid #fff;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.testimonial-text{
+	padding: 15px 80px;
+    margin: 0 40px;
+    position: relative;
+}
+.quote-left:before, .quote-right:after {
+    font-family: "FontAwesome";
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    font-size: 40px;
+    color: #3791C6;
+}
+.quote-left:before {
+    content: "\f10d";
+    left: 0;
+}
+.quote-right:after {
+    content: "\f10e";
+    left: auto;
+    right: 0;
+}
+.owl-nav .owl-next span, .owl-nav .owl-prev span{
+	font-size: 50px;
+}
+/*
+FOOTER
+*/
+.site-liks li{
+	display: inline-block;
+}
+footer{
+	text-align: center;
+}
+footer a, footer a:visited {
+    color: #fff;
+}
+footer .footer-top {
+    background: #4f5559;
+    padding: 50px 0;
+}
+footer .footer-bottom{
+    background: #3b4044;
+    padding: 30px 0;
+    color: #ffffff;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
