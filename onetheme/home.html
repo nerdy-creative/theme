@@ -13,17 +13,25 @@
 <body>
 	<div class="page-wraper">
 		<header>
-			<div class="container">
-				<div class="main-bar">
+			<div class="main-bar">
+				<div class="container">
 					<div class="logo-header">
 						<h1>LOGO</h1>
 					</div>
 					<div class="header-nav">
-						<nav class="navbar navbar-expand-lg navbar-light">
-						  <div class="collapse navbar-collapse" id="navbarNav">
-						    <ul class="navbar-nav">
+						<!--Navbar -->
+						<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+						    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+						  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+						    <ul class="navbar-nav mr-auto">
 						      <li class="nav-item active">
 						        <a class="nav-link" href="#">Services</a>
+						        <a class="nav-link" href="#">Home
+						          <span class="sr-only">(current)</span>
+						        </a>
 						      </li>
 						      <li class="nav-item">
 						        <a class="nav-link" href="#">Features</a>
@@ -31,22 +39,80 @@
 						      <li class="nav-item">
 						        <a class="nav-link" href="#">Pricing</a>
 						      </li>
+						      <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+						          aria-haspopup="true" aria-expanded="false">Dropdown
+						        </a>
+						        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+						          <a class="dropdown-item" href="#">Action</a>
+						          <a class="dropdown-item" href="#">Another action</a>
+						          <a class="dropdown-item" href="#">Something else here</a>
+						        </div>
+						      </li>
+						    </ul>
+						    <ul class="navbar-nav ml-auto nav-flex-icons">
 						      <li class="nav-item">
-						        <a class="nav-link" href="#">Contact Us</a>
+						        <a class="btn nav-link" data-toggle="modal" data-target="#loginModal">
+						          <i class="fa fa-user"></i> Login
+						        </a>
 						      </li>
 						      <li class="nav-item">
-						        <a class="nav-link" href="#">Jobs</a>
+						      	<!-- Button HTML (to Trigger Modal) -->
+						        <a class="btn nav-link" data-toggle="modal" data-target="#registerModal">
+						          <i class="fa fa-plus"></i> Sign Up
+						        </a>
 						      </li>
 						    </ul>
 						  </div>
 						</nav>
+						<!--/.Navbar -->
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="slider">
+		<section class="homepage-slider">
 			<div class="slider-wrapper">
 				<div class="slider-background"></div>
+			</div>
+			<div class="search-provider">
+				<div class="container">
+					<div class="search-provider-form">
+						<form method="get" action="">
+							<div class="row">
+								<div class="col-md-2 col-sm-4 search-col-6">
+								    <div class="type-address">
+								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
+								    </div>
+								</div>
+								<div class="col-md-2 col-sm-4 search-col-6">
+								    <div class="type-keyword">
+								      <input type="text" value="" placeholder="Address" id="searchAddress" name="searchAddress" class="form-control search-form-control" autocomplete="off">
+								    </div>
+								</div>
+								<div class="col-md-2 col-sm-4 search-col-6">
+								    <div class="type-address">
+								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
+								    </div>
+								</div>
+								<div class="col-md-2 col-sm-4 search-col-6">
+								    <div class="type-address">
+								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
+								    </div>
+								</div>
+								<div class="col-md-2 col-sm-4 search-col-6">
+								    <div class="type-address">
+								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
+								    </div>
+								</div>
+								<div class="col-md-2 col-sm-4 col-sm-12 search-col-6">
+								    <div class="type-search">
+								    	<input type="submit" value="Find Provider" class="btn btn-block btn-primary btn-search-result">
+								    </div>
+	  							</div>
+  							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="section-full categories text-center">
@@ -57,12 +123,8 @@
 					<p>Best Service Deals</p>
 				</div>
 				<div class="section-content">
-					<div class="row">
-						<div class="layout">
-							<div class="card-container col-md-4 col-sm-4 col-xs-6">
-								<div class="" style="background-image:url('https://aonetheme.com/extend/wp-content/uploads/2016/08/dreamstime_l_37979624-600x450.jpg')"></div>
-								<div class="overlay-box"></div>
-							</div>
+					<div class="row grid">
+						<div class="layout">					
 						</div>
 					</div>
 				</div>
@@ -121,7 +183,7 @@
 
 			</div>
 			<div class="overlay-main" style="opacity:0.8; background-color:#000000">
-  </div>
+  			</div>
 		</section>
 		<section class="section-full providers">
 			<div class="container">
@@ -172,6 +234,82 @@
                     <h2>Latest blog post</h2>
 					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
                     <p>Best Service Deals</p>
+                </div>
+                <div class="section-content">
+                	<div class="owl-carousel owl-theme owl-loaded owl-blog">
+                		<div class="owl-stage-outer">
+                			<div class="owl-stage">
+					            <div class="owl-item">
+					            	<div class="post-thumbnail">
+                                    	<a href="#"><img src="https://aonetheme.com/extend/wp-content/uploads/2016/01/thum1.jpg" alt=""><div class="post-thumbnail-overlay"></div></a>
+                               		</div>
+                               		<div class="post-info">
+                                        <div class="post-text">
+	                                        <h4 class="post-title"><a href="#">My second blog post title</a></h4>
+	                                        <div class="post-meta">
+	                                            <ul>
+	                                                <li class="post-author"><i class="fa fa-user"></i>By <a href="#" title="Posts by admin" rel="author">admin</a></li>
+	                                                <li class="post-comment"><i class="fa fa-comments"></i><a href="#">0 Comments</a></li>
+	                                            </ul>
+	                                        </div>
+	                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. [...]</p> 
+                                    	</div>                                    
+                               		</div>
+					            </div>
+					            <div class="owl-item">
+					            	<div class="post-thumbnail">
+                                   		<a href="#"><img src="https://aonetheme.com/extend/wp-content/uploads/2016/01/thum2.jpg" alt=""><div class="post-thumbnail-overlay"></div></a>
+                               		</div>
+                               		<div class="post-info">
+                                        <div class="post-text">
+	                                        <h4 class="post-title"><a href="#">My second blog post title</a></h4>
+	                                        <div class="post-meta">
+	                                            <ul>
+	                                                <li class="post-author"><i class="fa fa-user"></i>By <a href="#" title="Posts by admin" rel="author">admin</a></li>
+	                                                <li class="post-comment"><i class="fa fa-comments"></i><a href="#">0 Comments</a></li>
+	                                            </ul>
+	                                        </div>
+	                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. [...]</p> 
+                                    	</div>                                    
+                               		</div>
+					            </div>
+					            <div class="owl-item">
+					            	<div class="post-thumbnail">
+                                    	<a href="#"><img src="https://aonetheme.com/extend/wp-content/uploads/2016/01/thum3.jpg" alt=""><div class="post-thumbnail-overlay"></div></a>
+                                	</div>
+                                	<div class="post-info">
+                                        <div class="post-text">
+	                                        <h4 class="post-title"><a href="#">My second blog post title</a></h4>
+	                                        <div class="post-meta">
+	                                            <ul>
+	                                                <li class="post-author"><i class="fa fa-user"></i>By <a href="#" title="Posts by admin" rel="author">admin</a></li>
+	                                                <li class="post-comment"><i class="fa fa-comments"></i><a href="#">0 Comments</a></li>
+	                                            </ul>
+	                                        </div>
+	                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. [...]</p> 
+                                    	</div>                                    
+                               		</div>
+					            </div>
+					            <div class="owl-item">
+					            	<div class="post-thumbnail">
+                                    	<a href="#"><img src="https://aonetheme.com/extend/wp-content/uploads/2016/01/business.jpg" alt=""><div class="post-thumbnail-overlay"></div></a>
+                                	</div>
+                                	<div class="post-info">
+                                        <div class="post-text">
+	                                        <h4 class="post-title"><a href="#">My second blog post title</a></h4>
+	                                        <div class="post-meta">
+	                                            <ul>
+	                                                <li class="post-author"><i class="fa fa-user"></i>By <a href="#" title="Posts by admin" rel="author">admin</a></li>
+	                                                <li class="post-comment"><i class="fa fa-comments"></i><a href="#">0 Comments</a></li>
+	                                            </ul>
+	                                        </div>
+	                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. [...]</p> 
+                                    	</div>                                    
+                               		</div>
+					            </div>
+					        </div>
+                		</div>
+                	</div>
                 </div>
 			</div>
 		</section>
@@ -229,6 +367,7 @@
                 </div>
 			</div>
 		</section>
+		<!--
 		<section class="section-full testimonials text-center">
 			<div class="container">
 				<div class="section-head text-center">
@@ -237,7 +376,7 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took.</p>
                 </div>
                 <div class="section-content">
-                	<div class="owl-carousel owl-theme owl-loaded">
+                	<div class="owl-carousel owl-theme owl-loaded owl-testimonials">
 					    <div class="owl-stage-outer">
 					        <div class="owl-stage">
 					            <div class="owl-item">
@@ -299,6 +438,7 @@
                 </div>
 			</div>
 		</section>
+		-->
 		<footer>
 			<div class="footer-top">
                 <div class="container">                 
@@ -334,16 +474,233 @@
             </div>
 		</footer>
 	</div>
-
+    <!-- login modal -->
+    <div id="loginModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+        	<div class="modal-content login-modal">
+        		<div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                	<div class="row">
+                		<form class="login-form" method="post">
+                			<div class="col-md-12">
+	                			<div class="form-group">
+					                <input name="login-username" type="text" class="form-control" placeholder="Username">
+					            </div>
+					        </div>
+					        <div class="col-md-12">
+	                			<div class="form-group">
+					                <input name="login_password" type="password" class="form-control" placeholder="Password" data-bv-field="login_password">
+					            </div>
+					        </div>
+					        <div class="col-md-12">
+				                <div class="form-group">
+				              		<input type="submit" class="btn btn-primary btn-block" name="user-login" value="Login">
+				                </div>
+				            </div>
+				            <div class="col-md-12 text-center"> 
+				            	<small><a href="javascript:;" class="regform">Don't have an account?</a> | <a href="javascript:;" class="forgotpassform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Forgot Password</a></small>
+				            </div>
+				            <div class="col-md-12 text-center">
+				            	<div class="social-login-icons">
+							      	<a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
+		        					<a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Login with Twitter</a>
+							        <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a>
+							    </div>
+				            </div>
+                		</form>
+                	</div>
+                </div>
+        	</div>
+        </div>
+    </div>
+    <!-- sign up modal -->
+    <div id="registerModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content register-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="tabbable">
+					  <ul class="nav nav-tabs">
+					    <li class="active"><a href="#tab1" data-toggle="tab">Provider</a></li>
+					    <li><a href="#tab2" data-toggle="tab">Customer</a></li>
+					  </ul>
+					  <div class="tab-content">
+					    <div class="tab-pane active" id="tab1">
+					      <form class="provider-registration" method="post">
+					      	<div class="provider-wrapper row">
+					      		<div class="col-md-12">
+				                    <div class="form-group">
+				                      <input name="signup_company_name" type="text" class="form-control" placeholder="Company Name">
+				                    </div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input name="signup_first_name" type="text" class="form-control" placeholder="First Name" data-bv-field="signup_first_name">
+				                	</div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input name="signup_last_name" type="text" class="form-control" placeholder="Last Name" data-bv-field="signup_last_name">
+				                	</div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input name="signup_user_name" type="text" class="form-control" placeholder="Username" data-bv-field="signup_user_name">
+				                	</div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input name="signup_user_email" id="signup_user_email" type="text" class="form-control" placeholder="Email" data-bv-field="signup_user_email">
+				                  	</div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input name="signup_password" id="password" type="password" class="form-control" placeholder="Password" data-bv-field="signup_password">
+				                	</div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input name="signup_confirm_password" type="password" class="form-control" placeholder="Confirm Password" data-bv-field="signup_confirm_password">
+				                	</div>
+				                </div>
+				                <div class="col-md-12">
+				                    <div class="form-group">
+				                      <input type="text" class="form-control" name="signup_phone" id="signup_phone" placeholder="Phone">
+				                    </div>
+				                </div>
+				                <div class="col-md-12">
+				                    <div class="form-group">
+				                      <input type="text" class="form-control" name="signup_address" id="signup_address" placeholder="Address" data-bv-field="signup_address" autocomplete="off">
+				                  	</div>
+				                </div>
+				                <div class="col-md-6">
+				                	<select id="country" name="country" class="form-control">
+				                		<option value="Afghanistan">Select Country</option>	
+						                <option value="Afghanistan">Kosovo</option>
+						                <option value="Åland Islands">Albania</option>
+						                <option value="Albania">Germany</option>
+						                <option value="Algeria">Austria</option>
+						                <option value="American Samoa">Holand</option>
+						                <option value="Andorra">France</option>
+						            </select>
+				                </div>
+				                <div class="col-md-6">
+				                	<div class="form-group" id="autocity">
+                                          <input type="text" class="form-control" name="signup_city" placeholder="City (Select country to enable)" readonly="readonly" id="signup_city" autocomplete="off" data-bv-field="signup_city">
+                                    </div>
+				                </div>
+				                <div class="col-md-6">
+				                    <div class="form-group">
+				                      <input type="text" class="form-control" name="signup_zipcode" id="signup_zipcode" placeholder="Postal Code">
+				                    </div>
+				                </div>
+				                <div class="col-md-6">
+				                	<select id="country" name="country" class="form-control">
+				                		<option value="Afghanistan">Category</option>	
+						                <option value="Afghanistan">Football</option>
+						                <option value="Åland Islands">Basketball</option>
+						                <option value="Albania">Handball</option>
+						                <option value="Algeria">Tenis</option>
+						                <option value="American Samoa">Volleyball</option>
+						            </select>
+				                </div>
+				                <div class="col-md-12">
+					                    <button type="submit" class="btn btn-primary btn-block" name="user-register" data-dismiss="modal" value="Sign up">Sign up</button>
+								</div>
+				                <div class="col-md-12 text-center"> 
+				                	<small><a href="javascript:;" class="loginform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Already Registered?</a></small> 
+                				</div>
+					      	</div>
+					      </form>
+					      <div class="social-login-icons">
+					      	<a href="#" class="fb btn">					<i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        					</a>
+        					<a href="#" class="twitter btn">
+					          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+					        </a>
+					        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+					          </i> Login with Google+
+					        </a>
+					      </div>
+					    </div>
+					    <div class="tab-pane" id="tab2">
+					    	<form class="customer-registration" method="post">
+						      	<div class="customer-wrapper row">
+					                <div class="col-md-6">
+					                    <div class="form-group">
+					                      <input name="signup_first_name" type="text" class="form-control" placeholder="First Name" data-bv-field="signup_first_name">
+					                	</div>
+					                </div>
+					                <div class="col-md-6">
+					                    <div class="form-group">
+					                      <input name="signup_last_name" type="text" class="form-control" placeholder="Last Name" data-bv-field="signup_last_name">
+					                	</div>
+					                </div>
+					                <div class="col-md-6">
+					                    <div class="form-group">
+					                      <input name="signup_user_name" type="text" class="form-control" placeholder="Username" data-bv-field="signup_user_name">
+					                	</div>
+					                </div>
+					                <div class="col-md-6">
+					                    <div class="form-group">
+					                      <input name="signup_user_email" id="signup_user_email" type="text" class="form-control" placeholder="Email" data-bv-field="signup_user_email">
+					                  	</div>
+					                </div>
+					                <div class="col-md-6">
+					                    <div class="form-group">
+					                      <input name="signup_password" id="password" type="password" class="form-control" placeholder="Password" data-bv-field="signup_password">
+					                	</div>
+					                </div>
+					                <div class="col-md-6">
+					                    <div class="form-group">
+					                      <input name="signup_confirm_password" type="password" class="form-control" placeholder="Confirm Password" data-bv-field="signup_confirm_password">
+					                	</div>
+					                </div>
+									<div class="col-md-12">
+					                    <button type="submit" class="btn btn-primary btn-block" name="user-register" data-dismiss="modal" value="Sign up">Sign up</button>
+									</div>
+									<div class="col-md-12 text-center"> 
+				                		<small><a href="javascript:;" class="loginform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Already Registered?</a></small> 
+                					</div>
+						      	</div>
+					        </form>
+					        <div class="social-login-icons">
+							      	<a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
+		        					<a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Login with Twitter</a>
+							        <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a>
+						    </div>
+					    </div>
+					  </div>
+					</div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- carousel testimonials -->
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<!-- -->
+	<!-- login modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.owl-carousel').owlCarousel({
+			$('.owl-carousel.owl-testimonials').owlCarousel({
 				items:1,
 			    loop:true,
+			    margin:10,
+			    nav:true
+			})
+			$('.owl-carousel.owl-blog').owlCarousel({
+				items:3,
 			    margin:10,
 			    nav:true
 			})
