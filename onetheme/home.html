@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="page-wraper">
-		<header>
+		<header class="fixed-top">
 			<div class="main-bar">
 				<div class="container">
 					<div class="logo-header">
@@ -28,7 +28,6 @@
 						  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
 						    <ul class="navbar-nav mr-auto">
 						      <li class="nav-item active">
-						        <a class="nav-link" href="#">Services</a>
 						        <a class="nav-link" href="#">Home
 						          <span class="sr-only">(current)</span>
 						        </a>
@@ -78,37 +77,67 @@
 				<div class="container">
 					<div class="search-provider-form">
 						<form method="get" action="">
+							<div class="btn-wrap">
+			                    <a class="btn"><i class="fa fa-chevron-up"></i></a>
+			                </div>
 							<div class="row">
 								<div class="col-md-2 col-sm-4 search-col-6">
-								    <div class="type-address">
-								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
+								    <div class="type-search">
+								      <input type="text" value="" placeholder="Name" id="searchName" name="searchName" class="form-control search-form-control">
 								    </div>
 								</div>
 								<div class="col-md-2 col-sm-4 search-col-6">
-								    <div class="type-keyword">
+								    <div class="type-search">
 								      <input type="text" value="" placeholder="Address" id="searchAddress" name="searchAddress" class="form-control search-form-control" autocomplete="off">
 								    </div>
 								</div>
 								<div class="col-md-2 col-sm-4 search-col-6">
-								    <div class="type-address">
-								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
+								    <div class="type-search">
+								      <div class="search-form-control">
+								      		<select class="form-control selectpicker" id="select-city" data-live-search="true">
+								      			<option>Select category</option>
+								                <option data-tokens="basketball">Basketball</option>
+								 				<option data-tokens="football">Football</option>
+								 				<option data-tokens="handball">Handball</option>
+								 				<option data-tokens="volleyball">Volleyball</option>
+                							</select>
+								   		</div>
 								    </div>
 								</div>
 								<div class="col-md-2 col-sm-4 search-col-6">
-								    <div class="type-address">
-								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
-								    </div>
+								    <div class="type-search">
+								    	<div class="search-form-control">
+								      		<select class="form-control selectpicker" id="select-country" data-live-search="true">
+								      			<option>Select country</option>
+								                <option data-tokens="albania ">Albania</option>
+								 				<option data-tokens="kosovo">Kosovo</option>
+								 				<option data-tokens="germany">Germany</option>
+                							</select>
+								   		</div>
+									</div>
 								</div>
 								<div class="col-md-2 col-sm-4 search-col-6">
-								    <div class="type-address">
-								      <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword" class="form-control search-form-control">
-								    </div>
+								    <div class="type-search">
+								      	<div class="search-form-control">
+								      		<select class="form-control selectpicker" id="select-city" data-live-search="true">
+								      			<option>Select city</option>
+								                <option data-tokens="tirana">Tirana</option>
+								 				<option data-tokens="prishtina">Prishtina</option>
+								 				<option data-tokens="berlin">Berlin</option>
+                							</select>
+								   		</div>
+								   	</div>
 								</div>
 								<div class="col-md-2 col-sm-4 col-sm-12 search-col-6">
 								    <div class="type-search">
 								    	<input type="submit" value="Find Provider" class="btn btn-block btn-primary btn-search-result">
 								    </div>
 	  							</div>
+	  							<div class="col-md-12 collapse-div">
+	  								<h4 class="section-title text-light font-weight-bold">Filter by Radius:</h4>
+	  								<input type="range" class="custom-range" value="0" min="0" max="1000" id="customRange1">
+	  								<span class="float-lef text-light font-weight-bold">0km.</span>
+	  								<span class="float-right text-light font-weight-bold">1000km.</span>
   							</div>
 						</form>
 					</div>
@@ -119,12 +148,74 @@
 			<div class="container">
 				<div class="section-title">
 					<h2>Services Finder Categories</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
+					<div class="after-title-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
 					<p>Best Service Deals</p>
 				</div>
 				<div class="section-content">
-					<div class="row grid">
-						<div class="layout">					
+					<div class="layout">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="category-img-wrapper first">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<div class="categories-title">Basketball</div>
+									</div>
+								</div>
+							</div>					
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="category-img-wrapper second">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<div class="categories-title">Football</div>
+									</div>
+								</div>
+								<div class="category-img-wrapper third">
+									<div class="category-img" style="background-image:url('https://bloximages.chicago2.vip.townnews.com/record-eagle.com/content/tncms/assets/v3/editorial/8/66/866b598e-034b-11ea-a154-ebe3df866e0a/5dc75085e1c08.image.jpg?resize=612%2C408');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<div class="categories-title">Volleyball</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="category-img-wrapper fourth">
+									<div class="category-img" style="background-image:url('https://volleycountry.com/wp-content/uploads/2013/01/volleyball-ball-fivb.jpg');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<div class="categories-title">Basketball</div>
+									</div>
+								</div>
+								<div class="category-img-wrapper fifth">
+									<div class="category-img" style="background-image:url('https://fcylbm.es/wp-content/uploads/2018/07/rukomet-lopta.jpg');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<div class="categories-title">Basketball</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="category-img-wrapper sixth">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<div class="categories-title">Basketball</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -134,7 +225,7 @@
 			<div class="container">
 				<div class="section-title">
 					<h2>How Service Finder Works</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
+					<div class="after-title-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
 					<p>Best Service Deals</p>
 				</div>
 				<div class="section-content">
@@ -189,7 +280,7 @@
 			<div class="container">
 				<div class="section-head text-center">
                     <h2>Featured Providers</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
+					<div class="after-title-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
                     <p>Best Service Deals.</p>
                 </div>
 			</div>
@@ -197,42 +288,36 @@
 		<section class="section-full info">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-sm-6">
+					<div class="col-4">
 						<div class="info-company-satus text-center">
                             <div class="section-icon"><i class="fa fa-list-alt"></i></div>
-                            <div class="company-count">35</div>
-                            <div class="company-status-name">Providers</div>
+                            <div class="status-count">35</div>
+                            <div class="status-name">Providers</div>
                       	</div>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-4">
 						<div class="info-company-satus text-center">
                             <div class="section-icon"><i class="fa fa-user-plus"></i></div>
-                            <div class="company-count">11</div>
-                            <div class="company-status-name">Costumers</div>
+                            <div class="status-count">11</div>
+                            <div class="status-name">Users</div>
                       	</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="info-company-satus text-center">
-                            <div class="section-icon"><i class="fa fa-bullhorn"></i></div>
-                            <div class="company-count">2</div>
-                            <div class="company-status-name">Jobs</div>
-                      	</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
+                    </div>
+					<div class="col-4">
 						<div class="info-company-satus text-center">
                             <div class="section-icon"><i class="fa fa-sliders"></i></div>
-                            <div class="company-count">49</div>
-                            <div class="company-status-name">Categories</div>
+                            <div class="status-count">49</div>
+                            <div class="status-name">Categories</div>
                       	</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!--
 		<section class="section-full blog">
 			<div class="container">
 				<div class="section-head text-center">
                     <h2>Latest blog post</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
+					<div class="after-title-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
                     <p>Best Service Deals</p>
                 </div>
                 <div class="section-content">
@@ -313,11 +398,12 @@
                 </div>
 			</div>
 		</section>
+		-->
 		<section class="section-full overlay-choose text-center">
 			<div class="container">
 				<div class="section-head">
                     <h2>Why Choose us</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
+					<div class="after-title-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took.</p>
                 </div>
                 <div class="section-content">
@@ -349,30 +435,12 @@
 			<div class="overlay-main" style="opacity:0.7;background-color:#000000;">
        		</div>
 		</section>
-		<section class="section-full post-jobs">
-			<div class="container">
-				<div class="section-head text-center">
-                    <h2>Post Your Jobs</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took.</p>
-                </div>
-			</div>
-		</section>
-		<section class="section-full packages">
-			<div class="container">
-				<div class="section-head text-center">
-                    <h2>Our Packages</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took.</p>
-                </div>
-			</div>
-		</section>
 		<!--
 		<section class="section-full testimonials text-center">
 			<div class="container">
 				<div class="section-head text-center">
                     <h2>What peolpe are saying</h2>
-					<div class="after-titile-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
+					<div class="after-title-line"><span class="title-line-left"></span><span class="title-line-right"></span></div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took.</p>
                 </div>
                 <div class="section-content">
@@ -467,7 +535,7 @@
             	<div class="container">
                     <div class="row">
                     	<div class="col-md-12 text-center">
-                        	<span>Copyright 2020 | Aone Theme. All Rights Reserved</span>
+                        	<span>Copyright 2020 |  All Rights Reserved</span>
                         </div>
                     </div>
                 </div>
@@ -501,7 +569,7 @@
 				                </div>
 				            </div>
 				            <div class="col-md-12 text-center"> 
-				            	<small><a href="javascript:;" class="regform">Don't have an account?</a> | <a href="javascript:;" class="forgotpassform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Forgot Password</a></small>
+				            	<small><a href="#" class="regform">Don't have an account?</a> | <a href="javascript:;" class="forgotpassform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Forgot Password</a></small>
 				            </div>
 				            <div class="col-md-12 text-center">
 				            	<div class="social-login-icons">
@@ -581,13 +649,12 @@
 				                </div>
 				                <div class="col-md-6">
 				                	<select id="country" name="country" class="form-control">
-				                		<option value="Afghanistan">Select Country</option>	
-						                <option value="Afghanistan">Kosovo</option>
-						                <option value="Åland Islands">Albania</option>
-						                <option value="Albania">Germany</option>
-						                <option value="Algeria">Austria</option>
-						                <option value="American Samoa">Holand</option>
-						                <option value="Andorra">France</option>
+				                		<option value="Select Country">Select Country</option>	
+						                <option value="Kosovo">Kosovo</option>
+						                <option value="Albania">Albania</option>
+						                <option value="Germany">Germany</option>
+						                <option value="Austria">Austria</option>
+						                <option value="France">France</option>
 						            </select>
 				                </div>
 				                <div class="col-md-6">
@@ -602,31 +669,26 @@
 				                </div>
 				                <div class="col-md-6">
 				                	<select id="country" name="country" class="form-control">
-				                		<option value="Afghanistan">Category</option>	
-						                <option value="Afghanistan">Football</option>
-						                <option value="Åland Islands">Basketball</option>
-						                <option value="Albania">Handball</option>
-						                <option value="Algeria">Tenis</option>
-						                <option value="American Samoa">Volleyball</option>
+				                		<option value="Category">Category</option>	
+						                <option value="Football">Football</option>
+						                <option value="Basketball">Basketball</option>
+						                <option value="Handball">Handball</option>
+						                <option value="Tennis">Tennis</option>
+						                <option value="Volleyball">Volleyball</option>
 						            </select>
 				                </div>
 				                <div class="col-md-12">
 					                    <button type="submit" class="btn btn-primary btn-block" name="user-register" data-dismiss="modal" value="Sign up">Sign up</button>
 								</div>
 				                <div class="col-md-12 text-center"> 
-				                	<small><a href="javascript:;" class="loginform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Already Registered?</a></small> 
+				                	<small><a href="#" class="loginform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Already Registered?</a></small> 
                 				</div>
 					      	</div>
 					      </form>
 					      <div class="social-login-icons">
-					      	<a href="#" class="fb btn">					<i class="fa fa-facebook fa-fw"></i> Login with Facebook
-        					</a>
-        					<a href="#" class="twitter btn">
-					          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-					        </a>
-					        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-					          </i> Login with Google+
-					        </a>
+					      	<a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i>Login with Facebook</a>
+        					<a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i>Login with Twitter</a>
+					        <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a>
 					      </div>
 					    </div>
 					    <div class="tab-pane" id="tab2">
@@ -666,14 +728,14 @@
 					                    <button type="submit" class="btn btn-primary btn-block" name="user-register" data-dismiss="modal" value="Sign up">Sign up</button>
 									</div>
 									<div class="col-md-12 text-center"> 
-				                		<small><a href="javascript:;" class="loginform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Already Registered?</a></small> 
+				                		<small><a href="#" class="loginform bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>Already Registered?</a></small> 
                 					</div>
 						      	</div>
 					        </form>
 					        <div class="social-login-icons">
-							      	<a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
-		        					<a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Login with Twitter</a>
-							        <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Login with Google+</a>
+							    <a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i>Login with Facebook</a>
+		        				<a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i>Login with Twitter</a>
+							    <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i>Login with Google+</a>
 						    </div>
 					    </div>
 					  </div>
@@ -684,15 +746,25 @@
             </div>
         </div>
     </div>
-	<!-- carousel testimonials -->
+	
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- carousel testimonials
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	-->
 	<!-- login modal -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- select search options -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
+
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			/*
 			$('.owl-carousel.owl-testimonials').owlCarousel({
 				items:1,
 			    loop:true,
@@ -704,7 +776,33 @@
 			    margin:10,
 			    nav:true
 			})
-			});
+			*/
+			// Select dropdown
+			$(function() {
+			  $('.selectpicker').selectpicker();
+			});	
+		$('.btn-wrap').click(function () {
+			$(".collapse-div").toggle();
+			$(".btn-wrap .btn i").toggleClass("fa-chevron-down");
+		});
+		$( "#target" ).scroll(function() {
+		  $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
+		});
+
+    //add white backgorund to header on scroll
+	    $(window).scroll(function() {
+	        var scroll = $(window).scrollTop();
+
+	        if (scroll >= 79) {
+	            $(".main-bar").addClass('background-change-onscroll');
+	            $(".header-nav nav .nav-link").addClass('text-change-onscroll');
+	        } else {
+	            $(".main-bar").removeClass("background-change-onscroll");
+	            $(".header-nav nav .nav-link").removeClass('text-change-onscroll');
+	        }
+
+		});
+		});
 	</script>
 </body>
 </html>
