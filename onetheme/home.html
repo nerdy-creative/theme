@@ -4,66 +4,68 @@
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- 
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<!-- carousel testimonials -->
+	<!-- carousel testimonials
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css" />
+	 -->
 </head>
 <body>
 	<div class="page-wraper">
 		<header class="fixed-top">
 			<div class="main-bar">
 				<div class="container">
-					<div class="logo-header">
-						<h1>LOGO</h1>
-					</div>
 					<div class="header-nav">
-						<!--Navbar -->
-						<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-						    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-						    <span class="navbar-toggler-icon"></span>
-						  </button>
-						  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-						    <ul class="navbar-nav mr-auto">
-						      <li class="nav-item active">
-						        <a class="nav-link" href="#">Home
-						          <span class="sr-only">(current)</span>
-						        </a>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="#">Features</a>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="#">Pricing</a>
-						      </li>
-						      <li class="nav-item dropdown">
-						        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-						          aria-haspopup="true" aria-expanded="false">Dropdown
-						        </a>
-						        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-						          <a class="dropdown-item" href="#">Action</a>
-						          <a class="dropdown-item" href="#">Another action</a>
-						          <a class="dropdown-item" href="#">Something else here</a>
-						        </div>
-						      </li>
-						    </ul>
-						    <ul class="navbar-nav ml-auto nav-flex-icons">
-						      <li class="nav-item">
-						        <a class="btn nav-link" data-toggle="modal" data-target="#loginModal">
-						          <i class="fa fa-user"></i> Login
-						        </a>
-						      </li>
-						      <li class="nav-item">
-						      	<!-- Button HTML (to Trigger Modal) -->
-						        <a class="btn nav-link" data-toggle="modal" data-target="#registerModal">
-						          <i class="fa fa-plus"></i> Sign Up
-						        </a>
-						      </li>
-						    </ul>
-						  </div>
-						</nav>
+							<!--Navbar -->
+						  <nav id="mainNav" class="navbar navbar-fixed-top navbar-expand-lg">
+							  <div class="container">
+							    <!-- Brand and toggle get grouped for better mobile display -->
+							    <div class="navbar-header">
+							      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							        <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							      </button>
+							      <a class="navbar-brand" href="#">LOGO</a>
+							    </div>
+
+							    <!-- Collect the nav links, forms, and other content for toggling -->
+							    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							      	<ul class="nav navbar-nav navbar-right">
+								        <li class="nav-item">
+								          <a href="#">Home</a>
+								        </li>
+								        <li class="nav-item">
+								          <a href="#">Services</a>
+								        </li>
+								        <li class="nav-item">
+								          <a href="#">Pricing</a>
+								        </li>
+								        <li class="nav-item">
+								          <a href="#">Contact us</a>
+								        </li>							      
+									    <li class="nav-item">
+									    	<!-- Button Login and Sign up (to Trigger Modal) -->
+									      <a class="nav-link" data-toggle="modal" data-target="#loginModal">
+									          <i class="fa fa-user"></i> Login
+									      </a>
+									    </li>
+									    <li class="nav-item">
+									      <a class="nav-link" data-toggle="modal" data-target="#registerModal">
+									          <i class="fa fa-plus"></i> Sign Up
+									      </a>
+							      		</li>
+						   		  	</ul>
+							    </div>
+							    <!-- /.navbar-collapse -->
+							  </div>
+							  <!-- /.container -->
+							</nav>
 						<!--/.Navbar -->
 					</div>
 				</div>
@@ -96,10 +98,15 @@
 								      <div class="search-form-control">
 								      		<select class="form-control selectpicker" id="select-city" data-live-search="true">
 								      			<option>Select category</option>
-								                <option data-tokens="basketball">Basketball</option>
-								 				<option data-tokens="football">Football</option>
-								 				<option data-tokens="handball">Handball</option>
-								 				<option data-tokens="volleyball">Volleyball</option>
+								      			<optgroup label="Indoor">
+									                <option data-tokens="basketball">Basketball</option>
+									 				<option data-tokens="football">Football</option>
+									 				<option data-tokens="handball">Handball</option>
+									 			</optgroup>
+									 			<optgroup label="Outdoor">
+								 					<option data-tokens="volleyball">Volleyball</option>
+								 					<option data-tokens="tennis">Tennis</option>
+									 			</optgroup>
                 							</select>
 								   		</div>
 								    </div>
@@ -136,8 +143,8 @@
 	  							<div class="col-md-12 collapse-div">
 	  								<h4 class="section-title text-light font-weight-bold">Filter by Radius:</h4>
 	  								<input type="range" class="custom-range" value="0" min="0" max="1000" id="customRange1">
-	  								<span class="float-lef text-light font-weight-bold">0km.</span>
-	  								<span class="float-right text-light font-weight-bold">1000km.</span>
+	  								<span class="pull-left text-light font-weight-bold">0km.</span>
+	  								<span class="pull-right text-light font-weight-bold">1000km.</span>
   							</div>
 						</form>
 					</div>
@@ -153,7 +160,7 @@
 				</div>
 				<div class="section-content">
 					<div class="layout">
-						<div class="row">
+						<div class="row category-layout">
 							<div class="col-md-3 col-sm-4 col-xs-12">
 								<div class="category-img-wrapper first">
 									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
@@ -167,11 +174,11 @@
 							</div>					
 							<div class="col-md-3 col-sm-4 col-xs-12">
 								<div class="category-img-wrapper second">
-									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
+									<div class="category-img" style="background-image:url('https://i0.wp.com/dictatethegame.com/wp-content/uploads/2019/07/soccer-ball-on-goal-with-net-and-green-background-anek-suwannaphoom.jpg?fit=758%2C432&ssl=1');">
 									</div>
 									<div class="category-img-overlay"></div>
 									<div class="category-img-content text-center">
-										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 3</span>
 										<div class="categories-title">Football</div>
 									</div>
 								</div>
@@ -180,19 +187,19 @@
 									</div>
 									<div class="category-img-overlay"></div>
 									<div class="category-img-content text-center">
-										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 2</span>
 										<div class="categories-title">Volleyball</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-4 col-xs-12">
 								<div class="category-img-wrapper fourth">
-									<div class="category-img" style="background-image:url('https://volleycountry.com/wp-content/uploads/2013/01/volleyball-ball-fivb.jpg');">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=775&q=80');">
 									</div>
 									<div class="category-img-overlay"></div>
 									<div class="category-img-content text-center">
-										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
-										<div class="categories-title">Basketball</div>
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 1</span>
+										<div class="categories-title">Ping Pong</div>
 									</div>
 								</div>
 								<div class="category-img-wrapper fifth">
@@ -200,21 +207,71 @@
 									</div>
 									<div class="category-img-overlay"></div>
 									<div class="category-img-content text-center">
-										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
-										<div class="categories-title">Basketball</div>
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 2</span>
+										<div class="categories-title">Handball</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-4 col-xs-12">
 								<div class="category-img-wrapper sixth">
-									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');">
 									</div>
 									<div class="category-img-overlay"></div>
 									<div class="category-img-content text-center">
-										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 4</span>
-										<div class="categories-title">Basketball</div>
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 1</span>
+										<div class="categories-title">Tennis</div>
 									</div>
 								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-xs-12" style="display: none;">
+								<div class="category-img-wrapper seventh">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1568367489975-224c15825231?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 1</span>
+										<div class="categories-title">Billiards</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-xs-12" style="display: none;">
+								<div class="category-img-wrapper eighth">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1579019163248-e7761241d85a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 1</span>
+										<div class="categories-title">Darts</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-xs-12" style="display: none;">
+								<div class="category-img-wrapper ninth">
+									<div class="category-img" style="background-image:url('https://walldorado.com/image/cache/catalog/products/standard%20murals/sport/1621-PRINT-840x588.jpg');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 1</span>
+										<div class="categories-title">Minigolf</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-xs-12" style="display: none;">
+								<div class="category-img-wrapper tenth">
+									<div class="category-img" style="background-image:url('https://images.unsplash.com/photo-1551500357-f50395bb3f75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+									</div>
+									<div class="category-img-overlay"></div>
+									<div class="category-img-content text-center">
+										<span class="categories-quantity"><i class="fa fa-user-plus"></i> 1</span>
+										<div class="categories-title">Bowling</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="show_more_main" id="show_more_main5"> 
+								<span class="show_more btn btn-primary" title="Load more categories"><i class="fa fa-refresh"></i> Show more</span> 
+								<span class="loding default-hidden"></span>
 							</div>
 						</div>
 					</div>
@@ -288,21 +345,21 @@
 		<section class="section-full info">
 			<div class="container">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-md-4 col-sm-4 col-xs-4">
 						<div class="info-company-satus text-center">
                             <div class="section-icon"><i class="fa fa-list-alt"></i></div>
                             <div class="status-count">35</div>
                             <div class="status-name">Providers</div>
                       	</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-sm-4 col-xs-4">
 						<div class="info-company-satus text-center">
                             <div class="section-icon"><i class="fa fa-user-plus"></i></div>
                             <div class="status-count">11</div>
                             <div class="status-name">Users</div>
                       	</div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4 col-sm-4 col-xs-4">
 						<div class="info-company-satus text-center">
                             <div class="section-icon"><i class="fa fa-sliders"></i></div>
                             <div class="status-count">49</div>
@@ -512,7 +569,7 @@
                 <div class="container">                 
                     <div class="">
                         <div class="logo-footer">
-                        	<h1>LOGO</h1>
+                        	<h1 class="text-light">LOGO</h1>
                         </div>
                         <ul class="site-liks">
                         	<li><a href="https://aonetheme.com/extend">Home</a></li>
@@ -753,11 +810,10 @@
 	-->
 	<!-- login modal -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<!-- select search options -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
 
@@ -777,31 +833,27 @@
 			    nav:true
 			})
 			*/
-			// Select dropdown
-			$(function() {
-			  $('.selectpicker').selectpicker();
-			});	
 		$('.btn-wrap').click(function () {
 			$(".collapse-div").toggle();
 			$(".btn-wrap .btn i").toggleClass("fa-chevron-down");
 		});
-		$( "#target" ).scroll(function() {
-		  $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
+		//show other categories
+		$('.show_more').click(function () {
+			$(".seventh, .eighth, .ninth, .tenth").parent().show();
 		});
+    		//add white backgorund to header on scroll
+		    $(window).scroll(function() {
+		        var scroll = $(window).scrollTop();
 
-    //add white backgorund to header on scroll
-	    $(window).scroll(function() {
-	        var scroll = $(window).scrollTop();
+		        if (scroll >= 49) {
+		            $("#mainNav").addClass('background-change-onscroll');
+		            $(".header-nav nav .nav-item a, .navbar-brand").addClass('text-change-onscroll');
+		        } else {
+		            $("#mainNav").removeClass("background-change-onscroll");
+		            $(".header-nav nav .nav-item a, .navbar-brand").removeClass('text-change-onscroll');
+		        }
 
-	        if (scroll >= 79) {
-	            $(".main-bar").addClass('background-change-onscroll');
-	            $(".header-nav nav .nav-link").addClass('text-change-onscroll');
-	        } else {
-	            $(".main-bar").removeClass("background-change-onscroll");
-	            $(".header-nav nav .nav-link").removeClass('text-change-onscroll');
-	        }
-
-		});
+			});
 		});
 	</script>
 </body>

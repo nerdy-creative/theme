@@ -9,29 +9,19 @@ body{
     overflow-x: hidden;
 }
 /*header*/
-.logo-header{
-	float: left;
-}
-@media screen and (min-width: 1024px){
-    .header-nav nav{
-    	float: right;
-    }
-}  
-.extra-nav {
-    float: right;
-    padding: 25px 0;
-    margin-right: 15px;
-}
 header .main-bar{
     position: absolute;
     width: 100%;
     z-index: 10;
 }
-header .btn.nav-link{
+header .nav-link{
     border: 2px solid #fff;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
     margin-left: 10px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    border-radius: 10px;
 }
 .tabbable .nav-tabs li a {
     border:1px solid #e1e1e1;;
@@ -57,6 +47,16 @@ header .btn.nav-link{
 }
 .text-change-onscroll{
     color: #777!important;
+}
+.nav li a, .navbar-brand{
+    color: #fff;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent!important;
+    color: #3396d1!important;
+}
+.icon-bar{
+    background-color: #333;
 }
 /*
 ALL SECTIONS
@@ -163,12 +163,13 @@ HOMEPAGE SLIDER
 .search-provider-form .collapse-div{
     display: none;
 }
-.type-search .caret{
-    display: none;
-}
 /*
 SECTION CATEGORY
 */
+.category-img{
+    height: 250px;
+    margin-bottom: 30px;
+}
 .section-full.categories{
     background-color: #eff3f6;
 }
@@ -181,15 +182,9 @@ SECTION CATEGORY
 .category-img-wrapper{
     position: relative;
 }
-.category-img-wrapper.second .category-img,
-.category-img-wrapper.third .category-img,
-.category-img-wrapper.fourth .category-img,
-.category-img-wrapper.fifth .category-img{
-    height: 250px;
-}
-.category-img-wrapper.second .category-img,
-.category-img-wrapper.fourth .category-img{
-    margin-bottom: 30px;
+.category-img-wrapper.first .category-img,
+.category-img-wrapper.sixth .category-img{
+    height: 530px;
 }
 @media screen and (max-width: 767px){
     .category-img-wrapper .category-img {
@@ -215,6 +210,9 @@ SECTION CATEGORY
     top: 40%;
     width: 100%;
     color: #fff;
+}
+.category-layout{
+    margin-bottom: 80px;
 }
 /*
 SECTION OVERLAY
@@ -252,12 +250,6 @@ SECTION SLIDER
     opacity: 1;
     visibility: inherit;
     z-index: 20;
-}
-/*
-SECTION CATEGORY
-*/
-.category-img{
-    height: 530px;
 }
 /*
 SECTION DEALS
